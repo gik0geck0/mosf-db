@@ -1,0 +1,17 @@
+{
+  "name": "mosf-db",
+  "version": "1.0.0",
+  "description": "Dynamic DBaaS",
+  "main": "api.js",
+  "scripts": {
+    "start": "node --experimental-modules server.mjs"
+  },
+  "author": "Matt Buland",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.2",
+    "node-env-file": "^0.1.8",
+    "pg": "^7.4.1"
+  },
+  "engines": { "node": ">=0.10" }
+}

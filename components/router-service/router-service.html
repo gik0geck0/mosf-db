@@ -1,0 +1,31 @@
+<template>
+</template>
+<script>
+(function() {
+    var thatDoc = document;
+    var thisDoc = (thatDoc._currentScript || thatDoc.currentScript).ownerDocument;
+    var template = thisDoc.querySelector( 'template' ).content;
+
+    class RouterService {
+        constructor() {
+            super();
+        }
+
+        static doThing() {
+            return "Doing the thing";
+        }
+
+        /*
+        connectedCallback() {
+            var shadowRoot = this.attachShadow({mode:'open'});
+
+            // Adds a template clone into shadow root.
+            var clone = thatDoc.importNode(template, true);
+            shadowRoot.appendChild(clone);
+        }
+        */
+    }
+
+    // window.customElements.define("db-app", DbApp);
+})
+</script>
