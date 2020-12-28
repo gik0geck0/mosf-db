@@ -6,7 +6,7 @@ export default router;
 import { componentRepository, html } from './swc';
 import { bootstrapcomponent } from './swc.mjs';
 
-router.get('/', (req, res) => {
+router.get('/*', (req, res) => {
     res.send(
         html("MOSF - DB",
             bootstrapcomponent("db-app")
